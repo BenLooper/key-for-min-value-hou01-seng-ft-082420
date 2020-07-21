@@ -10,6 +10,6 @@ def key_for_min_value(name_hash)
       age_array.append(age)
     end 
     age_array.each do |element|
-      if element > 
+      if element > element.index()
     
 end
