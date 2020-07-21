@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
   min_age = 1000000 
   unless name_hash == {} do  
     name_hash.each do |name, age|
-      if age < min_age do 
+      if age < min_age 
         min_age = age 
         name_string = name 
       end 
