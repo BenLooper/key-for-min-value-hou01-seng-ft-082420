@@ -4,9 +4,12 @@
 def key_for_min_value(name_hash)
   name_array = []
   age_array = []
-  unless name_hash == {}
+  unless name_hash == {} do 
     name_hash.each do |name, age|
       name_array.append(name)
       age_array.append(age)
+    end 
+    age_array.each do |element|
+      if element > 
     
 end
