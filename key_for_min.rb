@@ -2,16 +2,14 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  name_array = []
-  age_array = []
+  name_string = ""
+  min_age = 1000000 
   unless name_hash == {} do 
     name_hash.each do |name, age|
-      name_array.append(name)
-      age_array.append(age)
-    end 
-    age_array.each do |element|
-      if element > (age_array[(element.index)-1]) or element > (age_array[(element.index)+1])
-        age_array[element] = 0 
-        
-    
+      if age < min_age do 
+        min_age = age 
+        name_string = name 
+      end 
+    end
+    name_string
 end
